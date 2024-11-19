@@ -1,0 +1,505 @@
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  overflow-x: hidden;
+  
+
+}
+nav{
+    z-index: 100;
+}
+.navbar2 {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 80px;
+    justify-content: right;
+    overflow: hidden;
+    align-items: center;
+    filter: drop-shadow(2px 2px 10px #8c11bd);
+  }
+
+.nav2_item {
+  width: 200px;
+  height: 45px;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 15px;
+  font-family: oswald;
+  font-weight: 700;
+  font-size: larger;
+  transition: 0.5s;
+  background-image: linear-gradient(
+    90deg,
+    rgba(67, 18, 99, 1) 0%,
+    rgba(253, 29, 29, 1) 70%,
+    rgba(255, 149, 0, 1) 100%
+  );
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin-right: 15px;
+}
+.nav2_item a{
+    text-decoration: none;
+    color: white;
+}
+#login{
+  background-image: linear-gradient(
+      90deg,
+      rgba(67, 18, 99, 1) 0%,
+      rgba(253, 29, 29, 1) 70%,
+      rgba(255, 149, 0, 1) 100%
+    );
+    background-size: 70% 2px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+#search {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+#cart {
+  width: 50px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+#account {
+  width: 50px;
+}
+.nav2_item:hover {
+  text-decoration: none;
+  background-size: 70% 2px;
+  background-position: center bottom;
+}
+.hexial {
+  filter: brightness(120%) saturate(120%) contrast(120%);
+  position: relative;
+  top: 15px;
+  right: 20px;
+  left: 5px;
+  margin-right: 50px;
+}
+#cart {
+  color: white;
+}
+
+
+.login{
+    z-index: 2;
+    height: 550px;
+    width: 650px;
+    position: absolute;
+    left: 28.3%;
+    top: 25%;
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #8c11bd;
+}
+
+
+.text{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: oswald ;
+    font-weight: 700;
+    animation: welcome 0.5s 1 ease-in;
+}
+
+@keyframes welcome{
+ from{
+    transform: translateY(-100px);
+ }
+ to{
+    transform: translateY(0px);
+ }
+}
+.input{
+    background-color: transparent;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+
+
+}
+
+.input input{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    width: 80%;
+    height: 50px;
+    margin-top: 40px;
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+    animation: input 0.5s linear 1;
+    font-family: oswald;
+    font-size: larger;
+    font-weight: 600;
+}
+@keyframes input{
+    from{
+       transform: translateX(-200px);
+    }
+    to{
+       transform: translateX(0px);
+    }
+   }
+.input .text{
+
+    display: flex;
+    font-size: medium;
+    gap: 220px;
+    margin-top: 20px;
+    animation: forgot 0.5s linear 1;
+}
+.input .text div{
+    transition: 0.2s ease-out ;
+    background-image: linear-gradient(
+        90deg,
+        rgba(67, 18, 99, 1) 0%,
+        rgba(253, 29, 29, 1) 70%,
+        rgba(255, 149, 0, 1) 100%
+      );
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size:  0% 2px;
+
+}
+
+@keyframes forgot{
+    from{
+       transform: translateX(100px);
+    }
+    to{
+       transform: translateX(0px);
+    }
+   }
+.input .text div:hover{
+    background-image: linear-gradient(
+        90deg,
+        rgba(67, 18, 99, 1) 0%,
+        rgba(253, 29, 29, 1) 70%,
+        rgba(255, 149, 0, 1) 100%
+      );
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size:  100% 2px;     
+
+}
+.text a{
+  text-decoration: none;
+  color: white;
+}
+.submit button {
+    height: 43px;
+    width: 99px;
+    transition: 0.3s;
+    border: 0;
+    border-radius: 5px;
+    font-family: oswald;
+    font-size: medium;
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    animation: submit 0.5s linear 1;
+  }
+
+  @keyframes submit{
+    from{
+       transform: translate(-50%,100px);
+    }
+    to{
+       transform: translate(-50%,0px);
+    }
+   }
+  .submit button:hover {
+    background-image: linear-gradient(
+      135deg,
+      rgba(67, 18, 99, 1) 0%,
+      rgba(253, 29, 29, 1) 70%,
+      rgba(255, 149, 0, 1) 100%
+    );
+    color: white;
+    transform: scale(1.02) translate(-50%);
+    box-shadow: 3px 2px 15px rgba(253, 29, 29, 1);
+  }
+
+
+
+.background img {
+  height: 55px;
+  width: 55px;
+  /* filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%); */
+}
+
+.bg {
+  display: flex;
+  width: 200%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  flex-direction: column;
+}
+.bg :nth-child(odd){
+    animation: motion 20s linear infinite;
+}
+.bg .background :nth-child(odd){
+    animation: motion 0s;
+}
+.bg .background :nth-child(even){
+    animation: motion2 0s linear infinite;
+}
+.bg :nth-child(even){
+    animation: motion2 20s linear infinite;
+}
+@keyframes motion2 {
+    from {
+      transform: translate(-25%) rotate(0deg);
+    }
+    to {
+      transform: translate(-0%) rotate(0deg);
+    }
+}
+
+@keyframes motion {
+  from {
+    transform: translate(0%) rotate(0deg);
+  }
+  to {
+    transform: translate(-25%) rotate(0deg);
+  }
+}
+
+.twitch {
+  filter: invert(50%) sepia(58%) saturate(7184%) hue-rotate(245deg)
+    brightness(100%) contrast(103%) opacity(10%);
+}
+.twitch:hover {
+  filter: invert(50%) sepia(58%) saturate(7184%) hue-rotate(245deg)
+    brightness(99%) contrast(103%) drop-shadow(0px 0px 10px #944dff)
+    drop-shadow(0px 0px 20px #944dff) drop-shadow(0px 0px 30px #944dff);
+}
+.logo {
+  filter: invert(45%) sepia(96%) saturate(6663%) hue-rotate(195deg)
+    brightness(96%) contrast(101%) opacity(10%);
+}
+.logo:hover {
+  filter: invert(45%) sepia(96%) saturate(6663%) hue-rotate(195deg)
+    brightness(96%) contrast(101%) drop-shadow(0px 0px 10px #63b6ff)
+    drop-shadow(0px 0px 20px #63b6ff) drop-shadow(0px 0px 30px #63b6ff);
+}
+
+.thunder:hover {
+  filter: invert(95%) sepia(97%) saturate(5352%) hue-rotate(330deg)
+    brightness(106%) contrast(102%) drop-shadow(0px 0px 10px #ffff6c)
+    drop-shadow(0px 0px 20px #eeff00) drop-shadow(0px 0px 30px #eeff00);
+}
+.thunder {
+  filter: invert(95%) sepia(97%) saturate(5352%) hue-rotate(330deg)
+    brightness(106%) contrast(102%) opacity(10%);
+}
+.fire:hover {
+  filter: invert(39%) sepia(97%) saturate(986%) hue-rotate(350deg)
+    brightness(90%) contrast(120%) drop-shadow(0px 0px 10px #ff8400)
+    drop-shadow(0px 0px 20px #ff8400) drop-shadow(0px 0px 30px #ff8400);
+}
+.fire {
+  filter: invert(39%) sepia(97%) saturate(986%) hue-rotate(350deg)
+    brightness(90%) contrast(120%) opacity(10%);
+}
+.pacman:hover {
+  filter: invert(86%) sepia(49%) saturate(3014%) hue-rotate(348deg)
+    brightness(102%) contrast(106%) drop-shadow(0px 0px 10px #ffd608)
+    drop-shadow(0px 0px 20px #ffd608) drop-shadow(0px 0px 30px #ffd608);
+}
+.pacman {
+  filter: invert(86%) sepia(49%) saturate(3014%) hue-rotate(348deg)
+    brightness(102%) contrast(106%) opacity(10%);
+}
+.x-box:hover {
+  filter: invert(20%) sepia(84%) saturate(6926%) hue-rotate(133deg)
+    brightness(96%) contrast(82%) drop-shadow(0px 0px 10px #2dff2d)
+    drop-shadow(0px 0px 20px #2dff2d) drop-shadow(0px 0px 30px #2dff2d);
+}
+.x-box {
+  filter: invert(20%) sepia(84%) saturate(6926%) hue-rotate(133deg)
+    brightness(96%) contrast(82%) opacity(10%);
+}
+.discord:hover {
+  filter: invert(32%) sepia(99%) saturate(1627%) hue-rotate(223deg)
+    brightness(100%) contrast(91%) drop-shadow(0px 0px 10px #5c69f2)
+    drop-shadow(0px 0px 20px #5c69f2) drop-shadow(0px 0px 30px #5c69f2);
+}
+.discord {
+  filter: invert(32%) sepia(99%) saturate(1627%) hue-rotate(223deg)
+    brightness(100%) contrast(91%) opacity(10%);
+}
+
+.steam:hover {
+  filter: invert(12%) sepia(23%) saturate(4560%) hue-rotate(207deg)
+    brightness(99%) contrast(100%) drop-shadow(0px 0px 10px #1b75a6)
+    drop-shadow(0px 0px 20px #1b75a6) drop-shadow(0px 0px 30px #1b75a6)
+    drop-shadow(0px 0px 40px #1b75a6);
+}
+.steam {
+  filter: invert(12%) sepia(23%) saturate(4560%) hue-rotate(207deg)
+    brightness(99%) contrast(100%) opacity(40%);
+}
+.ps5:hover {
+  filter: invert(100%) drop-shadow(0px 0px 2px rgb(255, 255, 255))
+    drop-shadow(0px 0px 10px rgb(1, 128, 255))
+    drop-shadow(0px 0px 10px rgb(1, 128, 255))
+    drop-shadow(0px 0px 30px rgb(1, 128, 255))
+    drop-shadow(0px 0px 40px rgb(1, 128, 255));
+}
+.ps5 {
+  filter: invert(100%) opacity(10%);
+}
+
+.sword:hover {
+  filter: invert(60%) sepia(94%) saturate(300%) hue-rotate(114deg)
+    brightness(120%) contrast(95%) drop-shadow(0px 0px 20px #39edd2)
+    drop-shadow(0px 0px 30px #39edd2);
+}
+.sword {
+  filter: invert(60%) sepia(94%) saturate(300%) hue-rotate(114deg)
+    brightness(120%) contrast(95%) opacity(10%);
+}
+.ghost:hover {
+  filter: invert(47%) sepia(39%) saturate(1103%) hue-rotate(179deg)
+    brightness(86%) contrast(88%) drop-shadow(0px 0px 2px #3c79cf)
+    drop-shadow(0px 0px 10px #3c79cf) drop-shadow(0px 0px 30px #3c79cf);
+}
+.ghost {
+  filter: invert(47%) sepia(39%) saturate(1103%) hue-rotate(179deg)
+    brightness(86%) contrast(88%) opacity(10%);
+}
+.triangle:hover {
+  filter: invert(67%) sepia(100%) saturate(314%) hue-rotate(93deg)
+    brightness(92%) contrast(91%) drop-shadow(0px 0px 5px #00ff84)
+    drop-shadow(0px 0px 20px #3ade8f) drop-shadow(0px 0px 30px #3ade8f)
+    drop-shadow(0px 0px 50px #3ade8f);
+}
+.triangle {
+  filter: invert(67%) sepia(100%) saturate(314%) hue-rotate(93deg)
+    brightness(92%) contrast(91%) opacity(10%);
+}
+.circle:hover {
+  filter: invert(20%) sepia(63%) saturate(4210%) hue-rotate(345deg)
+    brightness(91%) contrast(104%) drop-shadow(0px 0px 5px red)
+    drop-shadow(0px 0px 20px red) drop-shadow(0px 0px 30px red);
+}
+.circle {
+  filter: invert(20%) sepia(63%) saturate(4210%) hue-rotate(345deg)
+    brightness(91%) contrast(104%) opacity(10%);
+}
+.X:hover {
+  filter: invert(54%) sepia(74%) saturate(2465%) hue-rotate(174deg)
+    brightness(99%) contrast(94%) drop-shadow(0px 0px 5px #1da6f5)
+    drop-shadow(0px 0px 20px #1da6f5) drop-shadow(0px 0px 30px #1da6f5);
+}
+.X{
+  filter: invert(54%) sepia(74%) saturate(2465%) hue-rotate(174deg)
+    brightness(99%) contrast(94%) opacity(10%)}
+.square:hover {
+  filter: invert(62%) sepia(15%) saturate(4853%) hue-rotate(297deg)
+    brightness(99%) contrast(90%) drop-shadow(0px 0px 10px #f069a6)
+    drop-shadow(0px 0px 20px #f069a6) drop-shadow(0px 0px 3px #f069a6);
+}
+.square {
+  filter: invert(62%) sepia(15%) saturate(4853%) hue-rotate(297deg)
+    brightness(99%) contrast(90%) opacity(10%);
+}
+.pickaxe:hover {
+  filter: invert(27%) sepia(51%) saturate(566%) hue-rotate(359deg)
+    brightness(101%) contrast(91%) drop-shadow(0px 0px 5px #ffc14d)
+    drop-shadow(0px 0px 20px #ffc04b) drop-shadow(0px 0px 30px #9b752f);
+}
+.pickaxe {
+  filter: invert(27%) sepia(51%) saturate(566%) hue-rotate(359deg)
+    brightness(101%) contrast(91%) opacity(20%)}
+.mouse:hover {
+  filter: invert(55%) sepia(26%) saturate(6566%) hue-rotate(84deg)
+    brightness(121%) contrast(101%) drop-shadow(00px 0px 2px #09e609)
+    drop-shadow(00px 0px 5px #09e609) drop-shadow(00px 0px 30px #09e609);
+}
+.mouse {
+  filter: invert(55%) sepia(26%) saturate(6566%) hue-rotate(84deg)
+    brightness(121%) contrast(101%) opacity(10%);
+}
+.bomb:hover {
+  filter: invert(0%) drop-shadow(0px 0px 2px #fd7c7c)
+    drop-shadow(0px 0px 5px rgb(255, 29, 29)) drop-shadow(0px 0px 10px red)
+    drop-shadow(0px 0px 30px red);
+}
+.bomb{
+  filter: invert(100%) opacity(10%)}
+.keyboard:hover {
+  filter: invert(18%) sepia(99%) saturate(2631%) hue-rotate(279deg)
+    brightness(100%) contrast(98%) drop-shadow(0px 0px 5px #431263)
+    drop-shadow(0px 0px 10px #561e80) drop-shadow(0px 0px 20px #431263)
+    drop-shadow(0px 0px 30px #6600ff);
+}
+.keyboard {
+  filter: invert(18%) sepia(99%) saturate(2631%) hue-rotate(279deg)
+    brightness(100%) contrast(98%) opacity(20%);
+}
+.controller:hover {
+  filter: invert(100%) drop-shadow(0px 0px 5px white)
+    drop-shadow(0px 0px 5px white) drop-shadow(0px 0px 20px #ffffff);
+}
+.controller {
+  filter: invert(100%) opacity(10%)}
+.gaming-heart:hover {
+  filter: invert(28%) sepia(68%) saturate(6324%) hue-rotate(3.1deg)
+    brightness(84%) contrast(135%) drop-shadow(0px 0px 5px red)
+    drop-shadow(0px 0px 15px red) drop-shadow(0px 0px 25px red);
+}
+.gaming-heart {
+  filter: invert(28%) sepia(68%) saturate(6324%) hue-rotate(3.1deg)
+    brightness(84%) contrast(135%) opacity(10%)}
+/* .contr:hover{
+    filter: invert(76%) sepia(44%) saturate(775%) hue-rotate(155deg) brightness(100%) contrast(93%) drop-shadow(0px 0px 5px #56daf5) drop-shadow(0px 0px 10px #56daf5)drop-shadow(0px 0px 30px #56daf5);
+} */
+.contr:hover {
+  filter: invert(100%) drop-shadow(0px 0px 2px #56daf5)
+    drop-shadow(0px 0px 5px #56daf5) drop-shadow(0px 0px 10px #56daf5)
+    drop-shadow(0px 0px 20px #56daf5);
+}
+.contr{
+  filter: invert(100%) opacity(10%);
+}
+
+.headphone:hover {
+  filter: invert(85%) sepia(98%) saturate(438%) hue-rotate(52deg)
+    brightness(104%) contrast(95%) drop-shadow(0px 0px 2px #58f21b)
+    drop-shadow(0px 0px 5px #58f21b) drop-shadow(0px 0px 20px #58f21b);
+}
+.headphone {
+  filter: invert(85%) sepia(98%) saturate(438%) hue-rotate(52deg)
+    brightness(104%) contrast(95%) opacity(10%) }
+.gaming-pod:hover {
+  filter: invert(48%) sepia(66%) saturate(3500%) hue-rotate(352deg)
+    brightness(98%) contrast(120%) drop-shadow(0px 0px 2px rgb(255, 0, 0))
+    drop-shadow(0px 0px 8px red) drop-shadow(0px 0px 20px rgb(255, 0, 0))
+    drop-shadow(0px 0px 40px rgb(255, 0, 0));
+}
+.gaming-pod {
+  filter: invert(48%) sepia(66%) saturate(3500%) hue-rotate(352deg)
+    brightness(98%) contrast(120%) opacity(10%);
+}
